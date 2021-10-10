@@ -1,0 +1,7 @@
+﻿<Application
+    x:Class="image_capture_edit_21.UWP.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:image_capture_edit_21.UWP">
+
+</Application>

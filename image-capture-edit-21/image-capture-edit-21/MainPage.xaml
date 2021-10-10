@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+             xmlns:telerikImageEditor="clr-namespace:Telerik.XamarinForms.ImageEditor;assembly=Telerik.XamarinForms.ImageEditor"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:telerikCommon="clr-namespace:Telerik.XamarinForms.Common;assembly=Telerik.XamarinForms.Common"
+             xmlns:telerikPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+             xmlns:local="clr-namespace:image_capture_edit_21"
+             x:Class="image_capture_edit_21.MainPage">
+    <ContentPage.BindingContext>
+        <local:MPBinding />
+    </ContentPage.BindingContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <telerikImageEditor:RadImageEditor x:Name="imageEditor"
+                                           Padding="4"
+                                           Source="{Binding Image}" />
+        <telerikImageEditor:RadImageEditorToolbar Grid.Row="1"
+                                                  Padding="4"
+                                                  ImageEditor="{x:Reference imageEditor}" />
+    </Grid>
+</ContentPage>
